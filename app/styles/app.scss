@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+@mixin text-style { 
+	color: #333333;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+
+$standard_border: 2px solid #46eac2;
+$border_radius: 100%;
+$large_size: 200px;
+$small_size: 60px;
+$header_font: 'Arvo', serif;
+
+body {
+	@include text-style;
+}
+
+h1, h2, h3 {font-family: $header_font;}
+
+.color-new_preview {
+	border: $standard_border;
+	border-radius: $border_radius;
+	height: $large_size;
+	width: $large_size;
+	margin: 0 auto;
+}
+
+.color-new_input {
+	display: block;
+	margin: 6px auto;
+}
